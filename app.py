@@ -16,11 +16,7 @@ app.secret_key = "jose"
 api = Api(app)
 
 
-# all tables will be created before the first request comes in 
-@app.before_first_request
-def create_tables():
-    db.create_all()
-    print('tables created')
+
 
 
 jwt = JWT(app, authenticate, identity)  # JWT creates a new endpoint /auth
