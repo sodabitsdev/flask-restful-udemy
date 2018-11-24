@@ -1,0 +1,7 @@
+Install the following libraries
+
+pip3 install flask
+pip install flask_restful
+pip3 install Flask-JWT
+
+
